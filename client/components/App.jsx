@@ -3,8 +3,10 @@ import Header from './Header'
 
 
 const App = () => {
-  return ( 
-    <Header />
+  return (
+    <div className='app'>
+      <Header />
+    </div>
   )
 }
 
