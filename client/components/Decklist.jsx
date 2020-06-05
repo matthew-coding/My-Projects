@@ -12,7 +12,7 @@ const Decklist = () => {
             <h1>Zacama Decklist</h1>
             <ul>
                 {
-                    deck.ContainedObjects.map((obj, index) => <li key={index}>{obj.Nickname}<img src = 'https://www.frogtown.me/Images/08df7e63-65d6-4e42-8699-7510453d3100.jpg'></img></li>)
+                    deck.ContainedObjects.map((obj, index) => <li key={index}>{obj.Nickname}<img className = 'cardArt' src = 'https://www.frogtown.me/Images/08df7e63-65d6-4e42-8699-7510453d3100.jpg'></img></li>)
                 }
             </ul>
         </div>

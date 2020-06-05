@@ -1,8 +1,14 @@
 body {
     font-family: fantasy;
     background-color: aliceblue;
+    background-image: url(https://i.pinimg.com/originals/6d/8a/48/6d8a489108ac416073b44b5eac31a3ef.jpg);
 }
 
 .header {
     text-align: center;
+}
+
+.cardArt {
+    height: 10%;
+    width: 10%;
 }
