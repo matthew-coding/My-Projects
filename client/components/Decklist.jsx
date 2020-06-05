@@ -3,18 +3,15 @@ import Zacama from '../../server/public/Zacama.json'
 
 const deckstring = JSON.stringify(Zacama)
 const deckparsed = JSON.parse(deckstring)
-const deck =  deckparsed.ObjectStates[0].ContainedObjects
-
+const deck = deckparsed.ObjectStates[0]
+console.log(deck)
 const Decklist = () => {
     return (
         <div className='header'>
-            <h1>Magic the Gathering Decklist Test</h1>
+            <h1>Zacama Decklist</h1>
             <ul>
-                {deck.forEach(card => {
-                    return (
-                        <li>{card.Nickname}</li>
-                    )
-                })
+                {
+                    deck.ContainedObjects.map((obj, index) => <li key={index}>{obj.Nickname}</li>)
                 }
             </ul>
         </div>
